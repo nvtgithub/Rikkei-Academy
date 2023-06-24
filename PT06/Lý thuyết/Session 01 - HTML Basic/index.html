@@ -1,0 +1,85 @@
+<!-- Tạo khung html
+    C1: cú pháp html:5
+    c2: Sử dụng dấu !
+-->
+
+<!DOCTYPE html>
+<!-- tag định nghĩa cho file HTML -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tớ Tên Tiến <3</title>
+  </head>
+  <body>
+    <h2>Hi, Welcome to my channel</h2>
+    <br />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, dolorem!
+      Reprehenderit eveniet dolorum illum provident, eius pariatur itaque
+      delectus vitae vero accusamus, sit labore laboriosam modi sed repudiandae
+      vel iste?
+    </p>
+
+    <!-- Trong HTML có 2 loại thẻ chính:
+        - Thẻ Block:
+            + Các thẻ phân vùng: header, section, article, div, footer
+            + Thẻ hiển thị văn bản: p 
+            + Nhóm hiển thị danh sách: ul, li, ol, ...
+            + Nhóm thẻ định dạng tiêu đề: h1 -> h6
+            + Tag phân vùng: div,..
+            + Tính chất: Thẻ block sẽ chiếm hết chiều rộng của trang web( =>width: 100%)
+        - Thẻ Inline:
+            + Gồm: a, span, u, i, b, strong, img, br, ...
+            + Tính chất: Thẻ Inlnine sẽ chiếm đến phần nội dung
+    -->
+
+    <!-- Thẻ hiển thị danh sách -->
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+    <h1>Inline</h1>
+    <!-- - Khi sử dụng thẻ block bọc các thẻ inline => Vẫn sẽ hiển thị theo inline nhưng
+    nếu độ rộng của màn hình không đủ sẽ bị xuống dòng -->
+
+    <div>
+      <p>Thẻ block bọc thẻ inline</p>
+      <span>Tiến</span>
+      <span>Tiến</span>
+      <span>Tiến</span>
+      <span>Tiến</span>
+      <span>Tiến</span>
+      <span>Tiến</span>
+      <span>Tiến</span>
+      <span>Tiến</span>
+    </div>
+
+    <!-- 
+        Khi sử dụng thẻ inline bọc thẻ block
+        => sẽ bị ảnh hưởng bởi tính chất của thẻ block
+     -->
+    <p>Thẻ inline bọc thẻ block</p>
+    <span>
+      <div>Tiến</div>
+      <div>Tiến</div>
+      <div>Tiến</div>
+      <div>Tiến</div>
+    </span>
+    <!-- Thẻ block bọc thẻ inline + block
+    => Sẽ giữ nguyên tính chất của các thẻ
+-->
+    <div>
+      <span>Thẻ inline</span>
+      <div>Thẻ block</div>
+    </div>
+
+    <!-- Thẻ inline bọc thẻ inline + block 
+    => Sẽ giữ nguyên tính chất của các thẻ -->
+    <span>
+      <span>Thẻ inline</span>
+      <div>Thẻ block</div>
+    </span>
+  </body>
+</html>

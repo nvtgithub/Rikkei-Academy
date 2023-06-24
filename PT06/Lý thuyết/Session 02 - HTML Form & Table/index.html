@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 02 - HTML Form & Table</title>
+  </head>
+  <style>
+    div input {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <body>
+    <div>Buổi 2 - Form</div>
+    <!-- tag Form hay còn gọi là biểu mẫu
+    được sử dụng để lấy thông tin người dùng,
+    làm form đăng nhập, đăng ký -->
+
+    <!-- tag input: sử dụng cho người dùng nhập vào
+          tag button: được sử dụng để tạo nút cho người dùng click -->
+
+    <!-- các thuộc tính(attribute) trong thẻ form:
+      + action: Thường là  đường dẫn để có thể gửi dữ liệu
+      + id, name: dùng để định danh cho tag Form   
+      + method: dùng để xác định phương thức gửi cho form (get / post)
+      + enctype: dùng để xác định kiểu mã hoá gửi lên server 
+      => các Attribute có thể có hoặc không trong tà Form
+    -->
+
+    <form
+      action="index.html"
+      id="dangnhap"
+      name="dangnhap"
+      method="GET"
+      enctype=""
+    >
+      Email: <input type="text" /> <br />
+      Password: <input type="text" /><br />
+      <button>Click me !!!</button>
+    </form>
+
+    <h2>Các thẻ input trong html</h2>
+    input với text: <input type="text" /><br />
+    input với number:<input type="number" /> <br />
+    input với email: <input type="email" /><br />
+    input với password: <input type="password" /><br />
+    input với hidden: <input type="hidden" /><br />
+    input với textbox: <input type="checkbox" /> <br />
+    input với radio: <input type="radio" /><br />
+    input với button: <input type="button" /><br />
+    input với image: <input type="image" /><br />
+    input với submit: <input type="submit" /><br />
+    input với reset: <input type="reset" /><br />
+    input với file: <input type="file" /><br />
+    input với date: <input type="date" /><br />
+    input với color: <input type="color" /><br />
+    input với datetime-local: <input type="datetime-local" /><br />
+    input với time: <input type="time" /><br />
+    input với range: <input type="range" /><br />
+
+    <!-- select - option là bộ thẻ đi với nhau để xây dựng giao diện giúp
+         người dùng chọn danh sách -->
+    <h2>Select option</h2>
+    <select name="" id="">
+      <option value="">Hà Nội</option>
+      <option value="">Đà Nẵng</option>
+      <option value="">Hồ Chí Minh</option>
+    </select>
+    <br />
+
+    <textarea name="" id="" cols="30" rows="5"></textarea>
+    <hr />
+    <h1 style="text-align: center">Thực hành Form</h1>
+    <h3>Create Account</h3>
+    <form>
+      <div style="border-style: groove">
+        <p>Registration information</p>
+        <b>First name*:</b>
+        <input type="text" placeholder="enter your first name" />
+        <b>Last name*:</b>
+        <input type="text" placeholder="enter your last name" /> <br />
+        <b>Email*:</b> <input type="text" placeholder="enter your email" />
+        <b>Phone*:</b> <input type="number" placeholder="enter your number" />
+        <br />
+        <b>Password*:</b>
+        <input type="password" placeholder="enter your password" />
+        <b>Confirm Email*:</b>
+        <input type="password" placeholder="enter your password again" />
+        <br /><br />
+      </div>
+      <div style="border-style: groove">
+        <p>Personal information</p>
+        <b>Gender:</b> <input type="radio" value="Male" name="Gender" />Male
+        <input type="radio" value="Female" name="Gender" /> Female
+        <b>Hobbies:</b> <input type="checkbox" /> Music
+        <input type="checkbox" /> Sports <input type="checkbox" /> Travel
+        <input type="checkbox" /> Movies <br />
+        <b>Source of Income:</b>
+        <select>
+          <option>Employed</option>
+        </select>
+        <b>Income:</b> <input type="range" /> <br />
+        <b>Age:</b> <input type="number" min="0" /> <b>Profile Picture:</b>
+        <input type="file" /> <br />
+        <b>Birthday</b> <input type="date" /> <b>Address:</b>
+        <input type="text" /> <br />
+        <b>Bio:</b> <textarea name="" id="" cols="30" rows="3"></textarea>
+      </div>
+    </form>
+  </body>
+</html>
