@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 03 - Thực hành</title>
+    <style>
+      body {
+        padding: 10px;
+      }
+      h1 {
+        text-align: center;
+      }
+      table.a {
+        border-top: 2px solid lightgrey;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: 2px solid lightgrey;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+      }
+      table.a th,
+      table.a td {
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        border-bottom: 2px solid lightgrey;
+        border-right: 2px solid lightgrey;
+        padding: 5px;
+      }
+      img {
+        height: 200px;
+      }
+      table {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Bài 1 -->
+    <div>
+      <h1>Bài 1</h1>
+      <h2>Nested list</h2>
+      <ol type="1">
+        <li>
+          One
+          <ul type="circle">
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>
+              Others
+              <ol type="1">
+                <li>Text 1</li>
+                <li>Text 2</li>
+                <li>Text 3</li>
+              </ol>
+            </li>
+            <li>Cucumber</li>
+          </ul>
+        </li>
+        <li>Two</li>
+        <li>Three</li>
+      </ol>
+      <br />
+      <hr />
+    </div>
+
+    <!-- Bài 2 -->
+    <div>
+      <h1>Bài 2</h1>
+      <table class="a">
+        <caption>
+          This is table caption
+        </caption>
+        <thead>
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+            <th>Column 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data 1</td>
+            <td rowspan="3">Data 2</td>
+            <td>Data 3</td>
+            <td>Data 4</td>
+            <td>Data 5</td>
+          </tr>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 3</td>
+            <td colspan="2">Data 4 and 5</td>
+          </tr>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 3</td>
+            <td>Data 4</td>
+            <td>Data 5</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <hr />
+    </div>
+
+    <!-- Bài 3 -->
+    <div>
+      <h1>Bài 3</h1>
+      <table>
+        <caption>
+          <h2>Table gallery</h2>
+        </caption>
+        <thead>
+          <tr>
+            <th>Image column 1</th>
+            <th>Image column 2</th>
+            <th>Image column 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="img/thac.jpg" alt="" /></td>
+            <td><img src="img/thac.jpg" alt="" /></td>
+            <td><img src="img/thac.jpg" alt="" /></td>
+          </tr>
+          <tr>
+            <td><img src="img/thac.jpg" alt="" /></td>
+            <td><img src="img/thac.jpg" alt="" /></td>
+            <td><img src="img/thac.jpg" alt="" /></td>
+          </tr>
+          <tr>
+            <td><img src="img/thac.jpg" alt="" /></td>
+            <td><img src="img/thac.jpg" alt="" /></td>
+            <td><img src="img/thac.jpg" alt="" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <hr />
+    </div>
+
+    <!-- Bài 4 -->
+    <div>
+      <h1>Bài 4</h1>
+      <h2>Paragrap with devider</h2>
+      <hr />
+      <p>This is a <br />paragrap with a line break</p>
+      <br />
+      <hr />
+    </div>
+
+    <!-- Bài 5 -->
+    <div>
+      <h1>Bài 5</h1>
+      <h2>Format text <mark>marked</mark></h2>
+      <p>Please use only HTML without CSS.</p>
+      <ul>
+        <li>This word is <em>emphasized</em></li>
+        <li>This word is <i>italic</i></li>
+        <li>This word is <sup>superscripted</sup></li>
+        <li>This word is <sub>subscripted</sub></li>
+        <li>This word is <u>inserted</u></li>
+        <li>This word is <del>deleted</del></li>
+      </ul>
+      <br />
+      <hr />
+    </div>
+
+    <!-- Bài 6 -->
+    <div>
+      <h1>Bài 6: HTML Table</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Maria Anders</td>
+            <td>Mexico</td>
+          </tr>
+          <tr>
+            <td>Ernst Handel</td>
+            <td>Maria Anders</td>
+            <td>Austria</td>
+          </tr>
+          <tr>
+            <td>Island Trading</td>
+            <td>Maria Anders</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Maria Anders</td>
+            <td>Canada</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

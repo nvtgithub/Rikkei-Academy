@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 02 - HTML Form & Table</title>
+  </head>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+      height: 200px;
+    }
+    thead {
+      background-color: aquamarine;
+    }
+    tbody {
+      background-color: lightblue;
+    }
+    th,
+    td {
+      border: 3px solid lightgray;
+      padding: 5px;
+    }
+  </style>
+  <body>
+    <!-- Table 
+        + <table>: Định nghĩa bảng
+        + <caption>: Định nghĩa tiêu đề bảng
+        + <thead>, <tbody>, <tfoot>: Xác định phần đầu, nội dung, chân bảng
+        + <th>: Xác định tiêu đề cột
+        + <tr>: Xác định dòng của bảng
+        + <td>: Xác định cột của bảng
+    -->
+    <table>
+      <!-- Tên của bảng -->
+      <caption>
+        Bảng nhân viên
+      </caption>
+
+      <!-- Xác định phần đầu của bảng -->
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+
+      <!-- Xác định phần nội dung có trong bảng -->
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Nguyễn Tiến</td>
+          <td>22</td>
+          <td>tiennguyenvan23@gmail.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td rowspan="2">Nguyễn Tiến</td>
+          <td>22</td>
+          <td>example@gmail.com</td>
+        </tr>
+
+        <tr>
+          <td colspan>3 - Nguyễn Tiến</td>
+          <td colspan="2">20 - a@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Các thuộc tính(attributes ) có trong table
+        + Align : Căn giữa các phần tử trong bảng (không khuyến nghị dùng)
+        + Xác định độ dày của đường viền bao quanh bảng
+        + cellpadding: xác định khoảng cách nội dung với mép của cột
+        + cellspacing: xác định khoảng cách giữa 2 cột, 2 hàng
+        + width: Xác định độ rộng cho bảng hoặc các ô
+        + height: Xác định độ cao cho bảng hoặc các ô
+        + bgColor: Xác định màu nền cho các ô hoặc bảng
+        + colspan: gộp các ô theo chiều ngang
+        + rowspan: gộp các ô theo chiều dọc
+    -->
+  </body>
+</html>
