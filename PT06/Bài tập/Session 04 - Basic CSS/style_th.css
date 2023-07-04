@@ -1,0 +1,88 @@
+/* Bài 1 - Bài 2 */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif
+}
+h2 {
+  display: block;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: 0;
+  line-height: 3;
+}
+p {
+  text-align: center;
+}
+img {
+  margin: 0 auto;
+  display: block;
+}
+nav {
+  text-align: center;
+  background-color: gray;
+  line-height: 3;
+}
+a {
+  color: black;
+  text-decoration: none;
+  padding: 9px;
+}
+ul {
+  text-align: center;
+  background-color: lightgray;
+  margin: 0;
+  line-height: 2;
+}
+ul li {
+  display: inline-block;
+  padding: 9px;
+}
+a:hover {
+  color: #fff;
+  background-color: #333;
+}
+/* Bài 2 */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin: 12px;
+}
+ label {
+  font-weight: bold;
+  margin-bottom: 10px;
+ }
+ input[type="email"],input[type="text"], textarea {
+  border-radius: 4px;
+  margin-bottom: 10px;
+ }
+input[type="submit"] {
+  background-color: greenyellow;
+  color: white;
+  font-size: 16px;
+}
+/* Bài 4 */
+.container {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  width: 25%;
+  margin-right: 50px;
+}
+a {
+  padding: 15px;
+}
+a:hover {
+  background-color: aquamarine;
+}
+.content {
+  margin-left: 200px;
+  padding: 20px;  
+}

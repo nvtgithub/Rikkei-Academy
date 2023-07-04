@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai tập 02</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      padding: 20px;
+      width: 60%;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+    h2 + p span {
+      color: red;
+    }
+    h2 + p {
+      margin-bottom: 15px;
+    }
+    .content-header > div {
+      border: 3px solid green;
+      padding: 15px;
+      text-align: center;
+    }
+    .content-header {
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+    .content-body {
+      background-color: #e5e8ed;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    div.content-body h3 {
+      margin-bottom: 15px;
+    }
+
+    div.content-body div {
+      background-color: white;
+      border-left: 3px solid #04ac70;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+    button {
+      background-color: #07ab6f;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+    }
+    span[style="color: red"] {
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="content-header">
+        <h2>Center Align Text</h2>
+        <p>
+          To just center the text inside an element, use:
+          <span>text-align: center;</span>
+        </p>
+        <div>This text is centered</div>
+      </div>
+      <div class="content-body">
+        <h3>Example</h3>
+        <div>
+          <p class="test">
+            <span>test</span>
+            <span style="color: brown"> .center</span> { <br />
+            <span style="color: red">text-align:</span>
+            <span style="color: blue">center</span><br />
+            <span style="color: red">border:</span>
+            <span style="color: blue">3px solid green</span><br />
+            }
+          </p>
+        </div>
+        <button>Try it yourself >></button>
+      </div>
+    </div>
+  </body>
+</html>
