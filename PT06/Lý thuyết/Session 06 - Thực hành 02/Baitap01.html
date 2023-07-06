@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 06 - Thực hành 02</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      list-style: none;
+    }
+    body {
+      color: rgb(197, 201, 203);
+      font-size: 16px;
+      line-height: 1.8;
+      /* Tăng khoảng cách chữ lên 1.6 */
+    }
+    .infor-list {
+      margin: 30px auto;
+      width: 660px;
+      padding: 33px;
+    }
+    .infor-list li {
+      border-bottom: 1px dashed red;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+    }
+    .infor-list li .image {
+      float: left;
+      width: 100px;
+    }
+    .infor-list li .detail {
+      float: right;
+      width: 520px;
+      padding-top: 3px;
+    }
+    .clear-fix::after {
+      clear: both;
+      content: ".";
+      display: block;
+      height: 0;
+      line-height: 0;
+      visibility: hidden;
+    }
+    img {
+      width: 130px;
+    }
+  </style>
+  <body>
+    <ul class="infor-list">
+      <li class="clear-fix">
+        <div class="imgage">
+          <img src="./img/1.jpg" alt="" />
+        </div>
+        <section class="detail">
+          <h4>Nguyen Van Tien</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+            molestiae,
+          </p>
+        </section>
+      </li>
+    </ul>
+  </body>
+</html>
