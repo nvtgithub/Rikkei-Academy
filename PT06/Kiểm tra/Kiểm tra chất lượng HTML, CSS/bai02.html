@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 02</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0px;
+    }
+    /* --------nav-icon-css------- */
+    .nav {
+      height: 50px;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+    }
+   .nav-list {
+      display: inline-block;
+      
+
+    }
+    .nav-list li {
+      text-decoration: none;display: inline-block;
+      margin  : 10px;
+    }
+    /* ----------body-css--------- */
+    .container {
+      padding-left: 100px;
+      padding-right: 100px;
+      background-color: #f1f1f1;
+      height: 4000px;
+    }
+    .body {
+      background-color: #f1f1f1;
+      height: 3340px;
+      border: 1px solid lightgray;
+    }
+    /* ----------body-banner-css-------- */
+    .body-banner {
+      height: 500px;
+    }
+    /* banner-title-css */
+    .banner-title {
+      padding-top: 40px;
+      text-align: center;
+      background-color: #ffffff;
+      height: 100px;
+    }
+    mark {
+      background-color: #626262;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    .banner-title p span {
+      background-color: black;
+      padding: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .banner-title h2 {
+      padding-bottom: 10px;
+    }
+    /* banner-content-css */
+    .banner-content {
+      background-image: url(./img/hinhanh02.jpg);
+      height: 350px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    .banner-content div {
+      color: white;
+      margin-bottom: 10px;
+      padding-top: 100px;
+      padding-left: 15px;
+    }
+    .banner-content div {
+      display: flex;
+      flex-direction: column;
+    }
+    div span {
+      padding-bottom: 10px;
+    }
+    button {
+      width: 100px;
+      padding: 5px;
+      background-color: #a0a0a0;
+    }
+    /* ----------body-content-css---------- */
+    .body-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    /* ------content-left------ */
+    .content-left {
+      padding: 15px; /* height: 2800px; */
+      padding-right: 0;
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+    }
+    .item {
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: #ffffff;
+    }
+    .item-header {
+      text-align: center;
+      padding: 10px;
+    }
+    .datetime {
+      color: gray;
+    }
+    .item-img img {
+      height: 300px;
+      width: 100%;
+    }
+    .item-content {
+      margin-bottom: 20px;
+    }
+    .item-footer {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+    .item-footer span {
+      background-color: black;
+      color: white;
+      padding: 10px;
+    }
+    .item-footer span span {
+      padding: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: white;
+      color: black;
+    }
+    .item-comment {
+      display: flex;
+      flex-direction: row;
+    }
+    .comment-img img {
+      height: 100px;
+      padding-right: 45px;
+    }
+    .comment-content p {
+      padding: 12px;
+    }
+    /* ------------content-right----------- */
+    /*  */
+    .content-right {
+      flex: 1;
+      padding: 15px;
+    }
+    /* info-css */
+    .info {
+      background-image: url(./img/hinhanh05.jpg);
+      height: 250px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: relative;
+    }
+    .info-content {
+      position: absolute;
+      color: white;
+      left: 18px;
+      bottom: 20px;
+    }
+    .info-content h4 {
+      margin-bottom: 10px;
+    }
+    .info-content {
+      grid-template-columns: auto;
+    }
+    /* post-css */
+    .post {
+      padding-top: 35px;
+      display: grid;
+      grid-template-columns: auto;
+    }
+    .post-header {
+      background-color: black;
+      color: white;
+      padding: 18px;
+    }
+    .post-item {
+      display: flex;
+      flex-direction: row;
+      background-color: #ffffff;
+      padding: 18px;
+    }
+    .post-item-img img {
+      height: 50px;
+      width: 50px;
+    }
+    .post-item-content {
+      padding-left: 15px;
+    }
+    .post-item-content p {
+      padding-bottom: 8px;
+      font-size: 1.1rem;
+    }
+    .post-item:nth-child(2) {
+      border-bottom: 2px solid #ececec;
+    }
+    .post-item:nth-child(3) {
+      border-bottom: 2px solid #ececec;
+    }
+    .post-item:nth-child(4) {
+      border-bottom: 2px solid #ececec;
+    }
+    /* ads-css */
+    .ads {
+      padding-top: 15px;
+    }
+    .ads-content {
+      background-color: #f1f1f1;
+      text-align: center;
+      border: 10px solid white;
+      padding: 70px;
+    }
+    /* tags-css */
+    .tags {
+      padding-top: 15px;
+    }
+    .tags-content {
+      background-color: #ffffff;
+      padding: 18px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .tags-content span {
+      background-color: #f1f1f1;
+      margin: 5px;
+      padding: 5px;
+    }
+    .tags-content span:nth-child(1) {
+      background-color: black;
+      color: white;
+    }
+    /* inspiration-css */
+    .inspiration {
+      padding-top: 15px;
+    }
+    .inspiration-content {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: white;
+      height: 350px;
+    }
+    .inspiration-content img {
+      height: 43%;
+      width: 43%;
+      padding: 18px;
+      padding-right: 0;
+    }
+    img:nth-child(3) {
+      padding-top: 0;
+    }
+    img:nth-child(4) {
+      padding-top: 0;
+    }
+    /* follow-css */
+    .follow {
+      padding-top: 15px;
+    }
+    .follow-icon {
+      background-color: #ffffff;
+      padding: 18px;
+    }
+    /* sub-css */
+    .sub{
+      padding-top: 15px;
+    }
+    .sub-content {
+      padding: 18px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+    }
+    .sub-content p{
+      padding-bottom: 10px;
+    }
+    .sub-content input{
+      width: 100%;
+      padding: 5px
+     
+    }
+    .sub-content button {
+      text-align: center;
+      background-color: red;
+      color: white;
+      width: 104%;
+      border: 0;
+    }
+  </style>
+  <body>
+      <div class="nav">
+        <ul class="nav-list">
+          <li><i class="fa-brands fa-square-facebook"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-linkedin-in"></i></li>
+        </ul>
+        <ul class="nav-list">
+          <li><i class="fa-solid fa-magnifying-glass"></i></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="body">
+          <div class="body-banner">
+            <div class="banner-title">
+              <h2>TIEN BLOGLIFE</h2>
+              <p>
+                Welcome to the blog of <span><mark>Tien's world</mark></span>
+              </p>
+            </div>
+            <div class="banner-content">
+              <div>
+                <span>Tien's</span>
+                <span><h2>FASHION BLOG</h2></span>
+                <button>SUBCRIBE</button>
+              </div>
+            </div>
+          </div>
+          <div class="body-content">
+            <div class="content-left">
+              <div>
+                <div class="item">
+                  <div class="item-header">
+                    <p><b>TITILE HEADING</b></p>
+                    <p>
+                      <b>Title description,</b>
+                      <span class="datetime">May 2,2016</span>
+                    </p>
+                  </div>
+                  <div class="item-img">
+                    <img src="./img/hinhanh03.jpg" alt="hinhanh" />
+                  </div>
+                  <div class="item-content">
+                    <p>
+                      <b>More Hats</b> Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Sed cumque molestias cupiditate harum
+                      beatae sint atque velit impedit ut facilis. Illum harum
+                      sint facilis expedita magni accusamus neque sit ex?
+                    </p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sunt, ex quam? Quas unde, aperiam doloremque debitis ipsam
+                      ut iure culpa.
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                    <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+                    <span>Replies <span> 1 </span></span>
+                  </div>
+                  <br />
+                  <hr />
+                  <br />
+                  <div class="item-comment">
+                    <div class="comment-img">
+                      <img src="./img/hinhanh04.png" alt="" />
+                    </div>
+                    <div class="comment-content">
+                      <p>
+                        <b style="font-size: 20px">George</b>
+                        <span class="datetime">May 3, 2015, 6:32 PM</span>
+                      </p>
+                      <p>Great blog post! Following</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-header">
+                    <p><b>TITILE HEADING</b></p>
+                    <p>
+                      <b>Title description,</b>
+                      <span class="datetime">May 2,2016</span>
+                    </p>
+                  </div>
+                  <div class="item-img">
+                    <img src="./img/hinhanh03.jpg" alt="hinhanh" />
+                  </div>
+                  <div class="item-content">
+                    <p>
+                      <b>More Hats</b> Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Sed cumque molestias cupiditate harum
+                      beatae sint atque velit impedit ut facilis. Illum harum
+                      sint facilis expedita magni accusamus neque sit ex?
+                    </p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sunt, ex quam? Quas unde, aperiam doloremque debitis ipsam
+                      ut iure culpa.
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                    <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+                    <span>Replies <span> 1 </span></span>
+                  </div>
+                  <br />
+                  <hr />
+                  <br />
+                  <div class="item-comment">
+                    <div class="comment-img">
+                      <img src="./img/hinhanh04.png" alt="" />
+                    </div>
+                    <div class="comment-content">
+                      <p>
+                        <b style="font-size: 20px">George</b>
+                        <span class="datetime">May 3, 2015, 6:32 PM</span>
+                      </p>
+                      <p>Great blog post! Following</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-header">
+                    <p><b>TITILE HEADING</b></p>
+                    <p>
+                      <b>Title description,</b>
+                      <span class="datetime">May 2,2016</span>
+                    </p>
+                  </div>
+                  <div class="item-img">
+                    <img src="./img/hinhanh03.jpg" alt="hinhanh" />
+                  </div>
+                  <div class="item-content">
+                    <p>
+                      <b>More Hats</b> Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Sed cumque molestias cupiditate harum
+                      beatae sint atque velit impedit ut facilis. Illum harum
+                      sint facilis expedita magni accusamus neque sit ex?
+                    </p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sunt, ex quam? Quas unde, aperiam doloremque debitis ipsam
+                      ut iure culpa.
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                    <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+                    <span>Replies <span> 1 </span></span>
+                  </div>
+                  <br />
+                  <hr />
+                  <br />
+                  <div class="item-comment">
+                    <div class="comment-img">
+                      <img src="./img/hinhanh04.png" alt="" />
+                    </div>
+                    <div class="comment-content">
+                      <p>
+                        <b style="font-size: 20px">George</b>
+                        <span class="datetime">May 3, 2015, 6:32 PM</span>
+                      </p>
+                      <p>Great blog post! Following</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-header">
+                    <p><b>TITILE HEADING</b></p>
+                    <p>
+                      <b>Title description,</b>
+                      <span class="datetime">May 2,2016</span>
+                    </p>
+                  </div>
+                  <div class="item-img">
+                    <img src="./img/hinhanh03.jpg" alt="hinhanh" />
+                  </div>
+                  <div class="item-content">
+                    <p>
+                      <b>More Hats</b> Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Sed cumque molestias cupiditate harum
+                      beatae sint atque velit impedit ut facilis. Illum harum
+                      sint facilis expedita magni accusamus neque sit ex?
+                    </p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sunt, ex quam? Quas unde, aperiam doloremque debitis ipsam
+                      ut iure culpa.
+                    </p>
+                  </div>
+                  <div class="item-footer">
+                    <button><i class="fa-solid fa-thumbs-up"></i> Like</button>
+                    <span>Replies <span> 1 </span></span>
+                  </div>
+                  <br />
+                  <hr />
+                  <br />
+                  <div class="item-comment">
+                    <div class="comment-img">
+                      <img src="./img/hinhanh04.png" alt="" />
+                    </div>
+                    <div class="comment-content">
+                      <p>
+                        <b style="font-size: 20px">George</b>
+                        <span class="datetime">May 3, 2015, 6:32 PM</span>
+                      </p>
+                      <p>Great blog post! Following</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-right">
+              <div class="info">
+                <div class="info-content">
+                  <h4>My name</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloremque ad expedita perferendis vero tenetur ut
+                    obcaecati! Repellendus veniam ipsam eligendi!
+                  </p>
+                </div>
+              </div>
+              <div class="post">
+                <div class="post-header"><p>Popular Posts</p></div>
+                <div class="post-item">
+                  <div class="post-item-img">
+                    <img src="./img/hinhanh06.jpg" alt="" />
+                  </div>
+                  <div class="post-item-content">
+                    <p>Nguyen</p>
+                    <span>Lorem, ipsum dolor.</span>
+                  </div>
+                </div>
+                <div class="post-item">
+                  <div class="post-item-img">
+                    <img src="./img/hinhanh07.jpg" alt="" />
+                  </div>
+                  <div class="post-item-content">
+                    <p>Nguyen</p>
+                    <span>Lorem, ipsum dolor.</span>
+                  </div>
+                </div>
+                <div class="post-item">
+                  <div class="post-item-img">
+                    <img src="./img/hinhanh08.jpg" alt="" />
+                  </div>
+                  <div class="post-item-content">
+                    <p>Van</p>
+                    <span>Lorem, ipsum dolor.</span>
+                  </div>
+                </div>
+                <div class="post-item">
+                  <div class="post-item-img">
+                    <img src="./img/hinhanh09.jpg" alt="" />
+                  </div>
+                  <div class="post-item-content">
+                    <p>Tien</p>
+                    <span>Lorem, ipsum dolor.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ads">
+                <div class="post-header">Advertise</div>
+                <div class="ads-content">
+                  <p>Your AD here</p>
+                </div>
+              </div>
+              <div class="tags">
+                <div class="post-header">Tags</div>
+                <div class="tags-content">
+                  <span>Fashion</span><span>New York</span><span>London</span
+                  ><span>Hats</span> <span>Norway</span><span>Ideas</span
+                  ><span>Accessories</span><span>News</span>
+                  <span>Clothings</span><span>Shopping</span
+                  ><span>Accessories</span>
+                </div>
+              </div>
+              <div class="inspiration">
+                <div class="post-header">Inspiration</div>
+                <div class="inspiration-content">
+                  <img src="./img/hinhanh10.jpg" alt="" />
+
+                  <img src="./img/hinhanh11.jpg" alt="" />
+
+                  <img src="./img/hinhanh12.jpg" alt="" />
+
+                  <img src="./img/hinhanh13.jpg" alt="" />
+                </div>
+              </div>
+              <div class="follow">
+                <div class="post-header">Follow Me</div>
+                <div class="follow-icon">
+                  <span><i class="fa-brands fa-square-facebook"></i></span>
+                  <span><i class="fa-brands fa-instagram"></i></span>
+                  <span><i class="fa-solid fa-bell"></i></span>
+                  <span><i class="fa-brands fa-pinterest-p"></i></span>
+                  <span><i class="fa-brands fa-twitter"></i></span>
+                  <span><i class="fa-brands fa-linkedin-in"></i></span>
+                </div>
+              </div>
+              <div class="sub">
+                <div class="post-header">Subscribe</div>
+                <div class="sub-content">
+                  <p>Enter your e-mail below...</p>
+                  <input type="text" placeholder="Enter e-mail">
+                  <br>
+                  <button>Subscribe</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
