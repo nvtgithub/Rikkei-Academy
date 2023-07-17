@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .form-container {
+      background-color: aqua;
+      width: 500px;
+      margin: 36px auto 0 auto;
+      padding: 30px;
+    }
+    .form-row {
+      display: flex;
+      margin: 20px;
+    }
+    input {
+      flex: 1;
+      /* Các phần tử con của flex cha, thì sẽ chiếm hết width còn lại của thẻ cha */
+    }
+    label {
+      width: 90px;
+    }
+  </style>
+  <body>
+    <div class="form-container">
+      <form>
+        <div class="form-row">
+          <label>Email:</label>
+          <input type="text" placeholder="Nhập Email..." />
+        </div>
+        <div class="form-row">
+          <label>Password:</label>
+          <input type="password" placeholder="Nhập Password..." />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .container {
+      padding: 15px;
+      background-color: #f2f3f5;
+      width: 700px;
+      margin: 0 auto;
+    }
+    /* header */
+    .header {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .header h2 {
+      padding-bottom: 15px;
+    }
+    .header p {
+      display: inline-block;
+    }
+    /* body-flex */
+    .body {
+      display: flex;
+      justify-content: space-between;
+    }
+    .item-img {
+      height: 100px;
+      background-color: #5b9bd5;
+      border: 1px solid green;
+    }
+    .item {
+      flex-basis: 30%;
+      background-color: #ffffff;
+    }
+    h3,
+    p {
+      margin: 10px;
+    }
+    h3 {
+      padding-top: 7px;
+    }
+    h3 + p {
+      padding-bottom: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Our Service</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum iusto
+          unde porro cumque dicta ex eveniet?Lorem ipsum, dolor sit amet
+        </p>
+      </div>
+      <div class="body">
+        <div class="item">
+          <div class="item-img"></div>
+          <h3>Smart Watch</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+            sed id dignissimos. Reprehenderit eveniet quas corrupti vitae totam
+            quibusdam quasi!
+          </p>
+        </div>
+        <div class="item">
+          <div class="item-img"></div>
+          <h3>Smart Watch</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+            sed id dignissimos. Reprehenderit eveniet quas corrupti vitae totam
+            quibusdam quasi!
+          </p>
+        </div>
+        <div class="item">
+          <div class="item-img"></div>
+          <h3>Smart Watch</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+            sed id dignissimos. Reprehenderit eveniet quas corrupti vitae totam
+            quibusdam quasi!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

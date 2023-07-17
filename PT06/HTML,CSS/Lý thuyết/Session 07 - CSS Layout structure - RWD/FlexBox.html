@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+  </head>
+  <!-- Để sử dụng được flexbox:
+    => Khai báo display: flex; ở tag cha
+    - Các thuộc tính có trong flexbox: 
+        + flex-direction: row ->ngang/ column->dọc(Mặc định là row) 
+                            row-reverse: đc sử dụng để item ngược hướng với hướng ban đầu 
+        + justify-content: để căn các phần tử theo chiều ngang(main axis)
+                        flex-end, flex-start,center, space-between, space-around, space-evenly,..
+        + align-item: Để căn các phần tử theo chiều dọc
+                    flex-end, flex-start,center 
+                    
+                    ---------------------
+    + sử dụng flexbox
+    + flex
+    + flex-direction
+    + justify-content
+    + align-items
+    + flex-basic
+    + order
+                    
+    -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: aqua;
+      margin-top: 20px;
+      height: 200px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .item {
+      width: 50px;
+      height: 50px;
+      background-color: lightcoral;
+      margin: 10px;
+    }
+    .container1 {
+      background-color: aqua;
+      margin-top: 20px;
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!-- '.item*3' -->
+      <div class="item">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item">item 3</div>
+    </div>
+    <div class="container1"></div>
+  </body>
+</html>

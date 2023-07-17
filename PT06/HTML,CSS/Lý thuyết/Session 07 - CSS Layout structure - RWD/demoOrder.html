@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Flex-box Order</title>
+  </head>
+  <style>
+    .container {
+      text-align: center;
+      background-color: antiquewhite;
+      margin-top: 40px;
+      padding: 15px;
+      display: flex;
+      justify-content: space-around;
+      /* sử dụng order */
+      flex-wrap: wrap;
+      /* -> thay đổi bố cục của  */
+    }
+    .item {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      color: white;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 90px;
+    }
+    .item-one {
+      order: 5;
+    }
+    .item-two {
+      order: 4;
+    }
+    .item-three {
+      order: 6;
+    }
+    .item-four {
+      order: 2;
+    }
+    .item-five {
+      order: 1  ;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item item-one">1</div>
+      <div class="item item-two">2</div>
+      <div class="item item-three">3</div>
+      <div class="item item-four">4</div>
+      <div class="item item-five">5</div>
+    </div>
+  </body>
+</html>

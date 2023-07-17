@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: lightgray;
+      display: flex;
+      padding: 15px;
+      justify-content: space-between;
+    }
+    /* .layout-item {
+      background-color: lightblue;
+      flex: 1;
+    } */
+    .layout-item {
+      background-color: lightgoldenrodyellow;
+      /* flex-basis: 30%;*/
+      border: 2px solid black;
+      padding: 10px;
+    }
+    .layout-one {
+      flex: 1;
+    }
+    .layout-two {
+      flex: 2.5;
+    }
+    .layout-three {
+      flex: 1;
+    }
+    /* Khi trong các phần tử con mà phần tử nào có giá trị flex lớn hơn thì sẽ được chiếm gấp đôi width các phần tử còn lại*/
+  </style>
+  <body>
+    <div class="container">
+      <div class="layout-item layout-one">
+        <h2>Layout 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          explicabo amet fugiat sunt! Autem eos, itaque rem nisi at voluptates,
+          praesentium culpa facilis eveniet fugit aliquid amet quas
+          consequuntur! Illo aut rerum assumenda odio dicta praesentium nobis
+          nulla eaque consequatur? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Corporis explicabo amet fugiat sunt! Autem eos,
+          itaque rem nisi at voluptates, praesentium culpa facilis eveniet fugit
+          aliquid amet quas consequuntur! Illo aut rerum assumenda odio dicta
+          praesentium nobis nulla eaque consequatur?
+        </p>
+      </div>
+      <div class="layout-item layout-two">
+        <h2>Layout 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          explicabo amet fugiat sunt! Autem eos, itaque rem nisi at voluptates,
+          praesentium culpa facilis eveniet fugit aliquid amet quas
+          consequuntur! Illo aut rerum assumenda odio dicta praesentium nobis
+          nulla eaque consequatur?
+        </p>
+      </div>
+      <div class="layout-item layout-three">
+        <h2>Layout 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          explicabo amet fugiat sunt! Autem eos, itaque rem nisi at voluptates,
+          praesentium culpa facilis eveniet fugit aliquid amet quas
+          consequuntur! Illo aut rerum assumenda odio dicta praesentium nobis
+          nulla eaque consequatur?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
