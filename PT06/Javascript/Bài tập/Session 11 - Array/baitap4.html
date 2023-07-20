@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [1, 2, 3, 4, 5];
+      console.log("Cách 1: Sử dụng hàm có sẵn");
+      console.log(arr.includes(1));
+      console.log(arr.includes(0));
+      console.log("Cách 2: Không sử dụng hàm có sẵn");
+      function checkArray(element, array) {
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] === element) {
+            count = array[i];
+          }
+        }
+        if (count != 0) {
+          console.log(true);
+        } else console.log(false);
+      }
+      checkArray("3", arr);
+      checkArray(3, arr);
+    </script>
+  </body>
+</html>
