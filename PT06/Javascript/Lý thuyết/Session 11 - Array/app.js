@@ -136,7 +136,7 @@ let t = arr.reverse();
 console.log(t);
 
 //6. sort() - sắp xếp lại value mảng theo aphabet
-// sort()- sắp xếp theo 
+// sort()- sắp xếp theo     
 let arr3 = [5,4,2,440,9,1,3];
 let s = arr3.sort();
 console.log(s);
