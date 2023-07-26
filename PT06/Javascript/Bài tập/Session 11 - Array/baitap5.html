@@ -7,11 +7,22 @@
   </head>
   <body>
     <script>
-      let arr = [1, 2, 7, 4, 5];
-      console.log("Mảng ban đầu: " + arr);
-      console.log("Đảo ngược giá trị trong mảng");
-      let arr2 = arr.reverse();
-      console.log(arr2);
+      //Cách 1:
+      // let arr = [1, 2, 7, 4, 5];
+      // console.log("Mảng ban đầu: " + arr);
+      // console.log("Đảo ngược giá trị trong mảng");
+      // let arr2 = arr.reverse();
+      // console.log(arr2);
+
+      //Cách 2
+      // for (let i = 0; i < arr.length; i++) {
+      //   reverseArr[i] = arr[arr.length - 1 - i];
+      // }
+
+      //cách 3
+      for (let i = arr.length - 1; i >= 0; i--) {
+        reverseArr = push(arr[i]);
+      }
     </script>
   </body>
 </html>

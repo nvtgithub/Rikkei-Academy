@@ -9,12 +9,14 @@
     <script>
       let arr = [1, 2, 3, 4, 1, 3, 4, 5, 1, 2, 4];
       let number = parseInt(prompt("Nhập vào số: "));
+      let number1 = +prompt("Nhập vào số: ");
       let count = 0;
       for (let index = 0; index < arr.length; index++) {
         if (number == arr[index]) {
           count++;
         }
       }
+      console.log(typeof number1);
       console.log("Số lần xuất hiện số " + number + " là: " + count + " lần");
     </script>
   </body>

@@ -38,7 +38,7 @@ console.log('Chuỗi string: ',str);
 
 //Bài 7: 
 console.log('----Bài 7 ----');
-// 7.1
+// 7.1  
 let arr = prompt("Nhập vào kích thước đàn cừu của bạn, ngăn cách nhau bằng dấu phẩy: ").split(',');
 console.log('Xin chào, đây là kích thước đàn cừu của tôi:');
 arr = arr.map(Number);

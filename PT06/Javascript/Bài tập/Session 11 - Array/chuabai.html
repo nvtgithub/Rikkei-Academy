@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let txt = "xin chào";
+      //   console.log("Xin chào", txt);
+      //   console.log(`Sum = ${txt}
+      //       Tiến
+      //   Nguyễn
+      //         `);
+      //   console.log("-----------------");
+      //   Ép kiểu String -> Array
+      // -> sử dụng split()
+      //   let arr = prompt("Nhập các giá trị cách nhau bằng dấu phẩy ',").split(
+      //     ","
+      //   );
+      //   let max = arr[0];
+      //   console.log(arr);
+      //   for (let i = 0; i < arr.length; i++) {
+      //     if (max < arr[i]) {
+      //       max = arr[i];
+      //     }
+      //   }
+      //   console.log("Max = ", max);
+      console.log("-----------Bài 4---------");
+      let arr = [1, 2, 3, 4, 5];
+      let check = false; // Kỹ thuật đặt cờ (flag)
+      let value = Number(prompt("Nhập số bất kỳ:"));
+
+      for (let index = 0; index < arr.length; index++) {
+        if (value === arr[index]) {
+          check = true;
+          break;
+        }
+      }
+      console.log(`Is value ${check}`);
+    </script>
+  </body>
+</html>
