@@ -46,7 +46,7 @@ function initApp() {
         let newTr = document.createElement("tr");
         newTr.innerHTML = `
                 <td>${e.id}</td>
-                <td>${e.image}</td>
+                <td><img src="./img/products/${e.image}"/></td>
                 <td>${e.name}</td>
                 <td>${e.trademark}</td>
                 <td>${e.price}</td>
@@ -86,6 +86,7 @@ function updateData(i) {
     updateProduct.quantity = productList[i].quantity;
     updateProduct.description = productList[i].description;
     updateProduct.trademark = productList[i].trademark;
+
     console.log(updateProduct);
 
     localStorage.setItem("updateProduct", JSON.stringify(updateProduct));

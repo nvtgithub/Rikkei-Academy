@@ -1,5 +1,5 @@
 // Backup dữ liệu
-let data = [
+let data1 = [
     { id: 1, tredamark: "Apple", name: "Iphone 11 64GB", image: "iphone11-1.jpg", price: 10890 },
     { id: 2, tredamark: "Apple", name: "Iphone 11 128GB", image: "iphone11-2.jpg", price: 12490 },
     { id: 3, tredamark: "Apple", name: "Iphone 12 64GB", image: "iphone12-1.jpg", price: 15490 },
@@ -11,6 +11,7 @@ const productShow = document.querySelector(".product-show");
 const showData = document.querySelector(".show-data");
 
 const products = JSON.parse(localStorage.getItem("products")) || [];
+const data = JSON.parse(localStorage.getItem("product"));
 
 
 // Hiển thị dữ liệu
@@ -47,7 +48,7 @@ function addToCart(i) {
     localStorage.setItem("products", JSON.stringify(products));
     reloadCart();
 }
-reloadCart();
+
 
 // Hiển thị dữ liệu trong giỏ hàng
 function reloadCart() {
@@ -82,6 +83,7 @@ function reloadCart() {
 
     document.querySelector(".cart-total").innerHTML = `${a} VNĐ`;
 }
+reloadCart();
 
 // Xoá sản phẩm trong giỏ hàng
 function removeCart(i) {
@@ -92,10 +94,18 @@ function removeCart(i) {
         products = JSON.parse(localStorage.getItem("products"))
     }
 
-    products.splice(i, 1);
+    delete products[i];
+    // products.splice(i, 1);
     localStorage.setItem("products", JSON.stringify(products));
-    alert("Xoá thành công!")
+    // alert("Xoá thành công!")
     reloadCart();
 }
 
 // Hover cart
+// const cartHover = document.querySelector(".cart-icon");
+// cartHover.addEventListener("mouseover", function () {
+//     document.getElementsByClassName("fa-cart-shopping").style.display = "block";
+// });
+// cartHover.addEventListener("mouseout", function () {
+//     document.getElementsByClassName("fa-cart-shopping").style.display = "";
+// });
