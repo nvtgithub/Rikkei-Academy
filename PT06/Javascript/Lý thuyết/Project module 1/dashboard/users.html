@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style/products.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="mt-5 mb-5">Admin Page</h2>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="./users.html" class="link">Users Management</a>
+          </li>
+        </ol>
+      </nav>
+      <div class="row mt-5">
+        <div class="col-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <td>STT</td>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Description</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody class="product-show"></tbody>
+          </table>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <script src="./js/product.js"></script>
+  </body>
+</html>
